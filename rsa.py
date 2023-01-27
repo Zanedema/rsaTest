@@ -11,7 +11,7 @@ def mmi(x, y):  # modular multiplicative inverse
 def primeDecide():
     solutionNotFound = True
     while solutionNotFound:
-        n = r.randrange(3, 100000, 2) #odd numbers
+        n = r.randrange(3, 1000, 2) #odd numbers
         if (2**n-1)%n == 1:
             solutionNotFound = False
         else:
@@ -47,8 +47,7 @@ def decrypt(msg, d, n):
     return dec
 
 
-message = "Hello, world! I can send really long messages, or really short messages! No matter the size, three clever " \
-          "primes shall keep me safe! "
+message = "Hello, world! I can send really long messages, or really short messages! No matter the size, three clever primes shall keep me safe!"
 a = proc(message)
 
 e = 65537  # public prime
